@@ -3,6 +3,9 @@ package com.company.streams.reduction.exercise;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * random comment again
+ */
 public class Rating {
 
     double points;
