@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * random comment.
+ */
+/**
  * random comment again
  */
 public class Rating {
