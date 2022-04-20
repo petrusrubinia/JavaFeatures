@@ -1,7 +1,7 @@
 package com.company.lambda;
 
 /**
- * Best
+ * Best practices
  */
 public class BestPractices {
 
