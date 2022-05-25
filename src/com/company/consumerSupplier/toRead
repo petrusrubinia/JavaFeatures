@@ -1,0 +1,7 @@
+Consumer<T>
+        - is an in-built functional  interface
+        - can be used in all context where an object needs to be consumed and some operation
+         is to be performed on the object without returning any result
+        - e.g taken as input
+Supplier
+        - can be used in all contexts where is no input but an output is expected
