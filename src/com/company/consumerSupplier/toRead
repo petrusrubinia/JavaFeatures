@@ -3,5 +3,11 @@ Consumer<T>
         - can be used in all context where an object needs to be consumed and some operation
          is to be performed on the object without returning any result
         - e.g taken as input
-Supplier
+Supplier<T>
+        - reprezents a supplier of results
         - can be used in all contexts where is no input but an output is expected
+        - There is no requirement that a new or distinct result be returned each time the supplier is invoked.
+        - functional method : get()
+        - using the orElseGet(Supplier<T> supplier) method allows
+        us to replace an empty or null value (contained in the Optional object)
+        with the value produced by the provider Supplier<T> function;
