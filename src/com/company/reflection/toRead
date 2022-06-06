@@ -1,0 +1,6 @@
+Java Reflection API
+    - a class manipulator
+    - used to manipulate classes and everything in a class
+    - can slow down a program
+    - this particularly comes in handy when we don't know the names of the classes/attributes/ interfaces/ fields/methods
+    at compilation time.
