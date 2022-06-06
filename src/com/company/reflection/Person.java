@@ -1,4 +1,4 @@
-package com.company.reflaction;
+package com.company.reflection;
 
 public class Person {
     private String name;
