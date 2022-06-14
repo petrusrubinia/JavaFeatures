@@ -119,6 +119,17 @@ public class InspectAspects {
             goatClass.getConstructor(String.class, String.class);
         });
     }
+    
+    /**
+     * When class not found throw ClassNotFoundException.
+     */
+    @Test
+    public void givenClass_whenClassNotFound_thenHandleException() {
+        
+    	assertThrows(ClassNotFoundException.class, () -> {
+    		Class<?> goatClass = Class.forName("com.company.reflection.inspect.Goat1");
+        });
+    }
 
 
     /**
@@ -150,7 +161,8 @@ public class InspectAspects {
             assertEquals("String", fieldClass.getSimpleName());
 
         } catch (NoSuchFieldException e) {
-            e.printStackTrace();
+            //TODO - getField throws exception. Replace getField by getDeclaredField.
+        	fail();
         }
     }
 
