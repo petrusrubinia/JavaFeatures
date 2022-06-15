@@ -23,14 +23,11 @@ public class ReadFile {
 
     protected ArrayList<String[]> readCSVData(String absolutePath) throws IOException{
         final ArrayList<String[]> allRows = new ArrayList<>();
-        File csvFile = null;
-        BufferedReader bufferedReader = null;
-        csvFile = new File(absolutePath);
-        bufferedReader = new BufferedReader(new FileReader(csvFile));
+        File csvFile = new File(absolutePath);
+        BufferedReader bufferedReader = new BufferedReader(new FileReader(csvFile));
+        bufferedReader.readLine();
+        bufferedReader.readLine();
         String row = "";
-        bufferedReader.readLine();
-        bufferedReader.readLine();
-
         while ((row = bufferedReader.readLine()) != null) {
             if (row.isEmpty() || row.trim().isEmpty()) {
                 continue;

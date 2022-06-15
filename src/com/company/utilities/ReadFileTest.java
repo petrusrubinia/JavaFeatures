@@ -12,7 +12,7 @@ class ReadFileTest {
     @Test
     public void fileName_whenGetsStudents_thenNotThrowExeption() {
         ReadFile file = new ReadFile();
-        String studentFileName = "C:\\Users\\rubinia.petrus\\Documents\\IGrow\\JavaFeatures\\src\\com\\company\\resources\\Student.csv";
+        String studentFileName = "src\\com\\company\\resources\\Student.csv";
 
         assertDoesNotThrow(() -> file.getStudents(studentFileName));
     }
@@ -20,7 +20,7 @@ class ReadFileTest {
     @Test
     public void fileName_whenGetsStudents_thenThrowException() {
         ReadFile file = new ReadFile();
-        String wrongFileName = "C:\\Users\\rubinia.petrus\\Documents\\IGrow\\JavaFeatures\\src\\com\\company\\resources\\WrongFileName.csv";
+        String wrongFileName = "src\\com\\company\\resources\\WrongFileName.csv";
 
         assertThrows(FileNotFoundException.class, () -> file.getStudents(wrongFileName));
     }
@@ -28,7 +28,7 @@ class ReadFileTest {
     @Test
     public void fileName_whenGetsCatalog_thenNotThrowExeption() {
         ReadFile file = new ReadFile();
-        String catalogFileName = "C:\\Users\\rubinia.petrus\\Documents\\IGrow\\JavaFeatures\\src\\com\\company\\resources\\Catalog.csv";
+        String catalogFileName = "src\\com\\company\\resources\\Catalog.csv";
 
         assertDoesNotThrow(() -> file.getCatalog(catalogFileName));
     }
@@ -36,7 +36,7 @@ class ReadFileTest {
     @Test
     public void fileName_whenGetsCatalog_thenThrowException() {
         ReadFile file = new ReadFile();
-        String wrongFileName = "C:\\Users\\rubinia.petrus\\Documents\\IGrow\\JavaFeatures\\src\\com\\company\\resources\\WrongFileName.csv";
+        String wrongFileName = "src\\com\\company\\resources\\WrongFileName.csv";
 
         assertThrows(FileNotFoundException.class, () -> file.getCatalog(wrongFileName));
     }
